@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 64px;
+}
+h1::after,h1::before{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50px;
+  content: "";
+  position: relative;
+  display: inline-block;
+
+bottom:5px ;
+
+
+
+}
+h1::after{
+  left: 10px;
+}
+h1::before{
+  right: 10px;
+}
+h1:hover{
+  color: yellow;
+}
+h1:hover::after, h1:hover::before{
+  background-color: yellow;
+  transition: 0.5s;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  
+  padding-left: 30px;
+  padding-right:60px ;
+  padding-top: 10px;
+  padding-bottom:10px ;
+  border-radius: 5px;
+  color: rgb(48, 48, 48);
+  transform: translateX(-90%);
+  transition: 0.5s transform;
+  background-image:linear-gradient(gray,white) ;
+  box-shadow: 3px 5px 10px 0 black;
+
+
+}
+a:hover{
+  display: inline-block;
+  transition: 0.5s transform;
+  transform: translateX(0px);
+}
+.TOYS{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+width: max-content;
+}
